@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Test</title>
+</head>
+<body>
+    <h1>فحص الكاميرا</h1>
+    <video id="cameraStream" autoplay style="width: 100%; height: auto;"></video>
+
+    <script>
+        async function startCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+                const videoElement = document.getElementById('cameraStream');
+                videoElement.srcObject = stream;
+                alert("تم الوصول إلى الكاميرا!");
+            } catch (error) {
+                alert("تم رفض الوصول إلى الكاميرا.");
+                console.error("Error accessing camera:", error);
+            }
+        }
+
+        // تشغيل الكاميرا مباشرة عند فتح الصفحة
+        startCamera();
+    </script>
+</body>
+</html>
