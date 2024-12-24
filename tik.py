@@ -7,7 +7,7 @@ import requests
 url = 'https://hoti6.free.beeceptor.com'
 headers = {
     'Authorization': 'Bearer SOME-VALUE'
-}
+
 
 response = requests.get(url, headers=headers)
 
