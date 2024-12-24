@@ -12,10 +12,7 @@ print("=" * 60)
 target_video_id = input("🎯 أدخل معرف الفيديو الهدف (Video ID): ")
 
 # تعريف عنوان الـ API الوهمي (تعليمي فقط)
-fake_api_url = "https://x-bnr.free.beeceptor.com
-Use this as base URL when making API calls.
-
-"
+fake_api_url = "https://x-bnr.free.beeceptor.com"
 
 # إعدادات الطلب
 headers = {
