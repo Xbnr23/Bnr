@@ -12,7 +12,7 @@ print("=" * 60)
 target_user_id = input("🎯 أدخل معرف الحساب الهدف (User ID): ")
 
 # تعريف واجهة API وهمية (تعليمية فقط)
-fake_api_url = "https://hoti6.free.beeceptor.com"
+fake_api_url = "https://jsonplaceholder.typicode.com/users"
 
 # إعدادات الطلب
 headers = {
