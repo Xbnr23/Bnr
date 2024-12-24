@@ -2,17 +2,20 @@ import requests
 import time
 import random
 
-# تنبيه توعوي
-print("=" * 60)
-print("🚨 هذا السكريبت تعليمي فقط. لا تستخدمه في تطبيقات حقيقية!")
-print("❌ المتابعات الوهمية تنتهك سياسات المنصات وقد تؤدي إلى حظر حسابك.")
-print("=" * 60)
+import requests
 
-# إدخال معرف الحساب الهدف
-target_user_id = input("🎯 أدخل معرف الحساب الهدف (User ID): ")
+url = 'https://hoti6.free.beeceptor.com'
+headers = {
+    'Authorization': 'Bearer SOME-VALUE'
+}
 
-# تعريف واجهة API وهمية (تعليمية فقط)
-fake_api_url = "https://676aad7d863eaa5ac0df42de.mockapi.io/:endpoint"
+response = requests.get(url, headers=headers)
+
+if response.status_code == 200:
+    print(response.text)
+else:
+    print(f"Request failed with status code: {response.status_code}")
+
 
 # إعدادات الطلب
 headers = {
