@@ -6,8 +6,11 @@ import requests
 
 url = 'https://hoti6.free.beeceptor.com'
 headers = {
-    'Authorization': 'Bearer SOME-VALUE'
-
+    "Authorization": "Bearer SOME-VALUE
+} ",  # إذا كان API يتطلب مفتاحًا
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Content-Type": "application/json",
+}
 
 response = requests.get(url, headers=headers)
 
